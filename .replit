@@ -1,4 +1,4 @@
-entrypoint = "index.js"
+entrypoint = "AddTwoIntegers.js"
 
 hidden = [".config"]
 
