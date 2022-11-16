@@ -1,4 +1,4 @@
-entrypoint = "AddTwoIntegers.js"
+entrypoint = "MorseCode.js"
 
 hidden = [".config"]
 
