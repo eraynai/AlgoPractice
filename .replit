@@ -1,4 +1,4 @@
-entrypoint = "MorseCode.js"
+entrypoint = "DecodeTheMessage.js"
 
 hidden = [".config"]
 
