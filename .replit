@@ -1,4 +1,4 @@
-entrypoint = "DecodeTheMessage.js"
+entrypoint = "CheckPangram.js"
 
 hidden = [".config"]
 
