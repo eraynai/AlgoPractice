@@ -1,4 +1,4 @@
-entrypoint = "CheckPangram.js"
+entrypoint = "IsomorphicStrings.js"
 
 hidden = [".config"]
 
