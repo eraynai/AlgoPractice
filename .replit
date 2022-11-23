@@ -1,4 +1,4 @@
-entrypoint = "IsomorphicStrings.js"
+entrypoint = "GravityFlip.js"
 
 hidden = [".config"]
 
