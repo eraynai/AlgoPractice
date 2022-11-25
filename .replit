@@ -1,4 +1,4 @@
-entrypoint = "GravityFlip.js"
+entrypoint = "IsArraySorted.js"
 
 hidden = [".config"]
 
