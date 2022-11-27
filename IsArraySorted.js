@@ -20,6 +20,8 @@ else I would return no
 
 */
 
+const { isDeepStrictEqual } = require("util");
+
 // Complete the method which accepts an array of integers, and returns one of the following:
 
 // "yes, ascending" - if the numbers in the array are sorted in an ascending order
@@ -28,27 +30,32 @@ else I would return no
 // You can assume the array will always be valid, and there will always be one correct answer.
 
 function isSortedAndHow(arr) {
-  let isYes = true;
+  let isAscending = true;
+  let isDescending = true;
   const accSorted = [...arr];
   const decSorted = [...arr];
-  let accArr = accSorted.sort((a, b) => {
+  accSorted.sort((a, b) => {
     return a - b;
   })
-  let decArr = decSorted.sort((a, b) => {
+  decSorted.sort((a, b) => {
     return b - a;
   })
 
-  for (let i = 0; i < accArr.length; i++) {
-    if (accArr[i] !== arr[i]) {
-      for (let j = 0; j < decArr.length; j++) {
-        if (decArr[j] !== arr[j]) {
-          isYes = false;
-        }
-      }
+  for(let i = 0; i < accSorted.length; i++){
+    if(accSorted[i] !== arr[i]){
+      isAscending = false;
+      break;
     }
   }
 
-  if (isYes) {
+  for(let j = 0; j < decSorted.length; j++){
+    if(decSorted[j] !== arr[i]){
+      isDescending = false;
+      break
+    }
+  }
+
+  if (isAscending || isDescending) {
     return "yes"
   }
   return "no"

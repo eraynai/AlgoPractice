@@ -1,4 +1,4 @@
-entrypoint = "IsArraySorted.js"
+entrypoint = "ReverseString.js"
 
 hidden = [".config"]
 
