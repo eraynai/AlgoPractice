@@ -22,12 +22,19 @@ push it each character to the back of the array
 */
 
 function reverseString(arr){
-  for(let i = 0; i < arr.length /2; i++){
-    
-    let temp = arr[i];
-    arr[i] = arr[arr.length - 1 - i];
-    arr[arr.length - 1 - i] = temp;
+
+  let [start, end] = [0, arr.length - 1]
+  while(start < end){
+    [arr[start], arr[end]] = [arr[end], arr[start]]
+    start++
+    end--
   }
+  // for(let i = 0; i < arr.length / 2; i++){
+    
+  //   let temp = arr[i];
+  //   arr[i] = arr[arr.length - 1 - i];
+  //   arr[arr.length - 1 - i] = temp;
+  // }
   return arr;
 }
 

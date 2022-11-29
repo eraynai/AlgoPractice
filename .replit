@@ -1,4 +1,4 @@
-entrypoint = "ReverseString.js"
+entrypoint = "FizzBuzz.js"
 
 hidden = [".config"]
 
